@@ -1,39 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
+@font-face { /* font face, more like VOID FACE */
+  font-family: 'abhoFont';
+  src: url('abhofont.ttf') format('truetype');
+}
 
-html,
 body {
-    height: 100%;
     margin: 0;
+    background-color: black;
+    color: white;
+    font-family: 'AbhoFont', sans-serif;
 }
 
-body {
-    background: #000;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Jersey 20", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-h1 {
-    font-size: 48px;
-    text-transform: lowercase;
-}
-
+/* Pixelated image rendering */
 img {
-    width: 400px;
-    height: auto;
-    margin-bottom: 20px;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
     image-rendering: -moz-crisp-edges;
+}
+
+.logo-container {
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container img {
+    width: 500px;
+}
+
+.cover-art {
+    width: 100%;
+    margin: 40px auto;
+    display: block;
+}
+
+.game-info {
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    font-family: 'AbhoFont', sans-serif;
+    transition: background 0.3s;
+}
+
+.steam-widget, .youtube-trailer {
+    margin: 10px auto;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
 }

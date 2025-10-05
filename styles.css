@@ -93,14 +93,32 @@ img {
     cursor: pointer;
 }
 
+@media (max-width: 1100px) {
+  .icon-btn {
+    display: none;
+  }
+}
+
 .icon-btn img {
-    width: 30px;
+    width: 60px;
     height: auto;
     display: block;
 }
 
-.icon-btn:hover img {
-    filter: invert(1);
+.icon-btn:hover img[src$="socials-youtube.png"] {
+  content: url("images/socials-youtube-active.png");
+}
+
+.icon-btn:hover img[src$="socials-bluesky.png"] {
+  content: url("images/socials-bluesky-active.png");
+}
+
+.icon-btn:hover img[src$="socials-x.png"] {
+  content: url("images/socials-x-active.png");
+}
+
+.icon-btn:hover img[src$="socials-discord.png"] {
+  content: url("images/socials-discord-active.png");
 }
 
 /* Sections */

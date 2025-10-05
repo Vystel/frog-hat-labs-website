@@ -1,6 +1,6 @@
 @font-face { /* font face, more like VOID FACE */
-  font-family: 'abhoFont';
-  src: url('abhofont.ttf') format('truetype');
+    font-family: 'AbhoFont';
+    src: url('abhofont.ttf') format('truetype');
 }
 
 body {
@@ -17,6 +17,103 @@ img {
     image-rendering: -moz-crisp-edges;
 }
 
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-bottom: 2px solid white;
+    height: 80px;
+    margin: 0;
+    padding: 0 10px;
+    transition: transform 0.3s ease;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* left */
+.header-left {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.header-left img {
+    max-height: 60px;
+}
+
+/* center */
+.header-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+}
+
+/* right */
+.header-right {
+    margin-left: auto;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.section-btn {
+    background: none;
+    border: none;
+    color: white;
+    width: 200px;
+    height: 80px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    font-family: 'AbhoFont', sans-serif;
+    text-transform: uppercase;
+}
+
+.section-btn:hover {
+    background: white;
+    color: black;
+}
+
+.icon-btn {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.icon-btn img {
+    width: 30px;
+    height: auto;
+    display: block;
+}
+
+.icon-btn:hover img {
+    filter: invert(1);
+}
+
+/* Sections */
+.section {
+    padding: 80px 0;
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+/* Main content */
 .logo-container {
     margin: 40px auto;
     display: flex;
@@ -30,33 +127,30 @@ img {
 
 .cover-art {
     width: 100%;
-    margin: 40px auto;
     display: block;
 }
 
-.game-info {
+.text-content {
     max-width: 800px;
-    margin: 0px auto;
+    margin: 0 auto;
     padding: 20px;
     text-align: center;
+    font-size: 20px;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: 2px solid white;
-    text-decoration: none;
-    color: white;
-    font-family: 'AbhoFont', sans-serif;
-    transition: background 0.3s;
-}
-
-.steam-widget, .youtube-trailer {
+.steam-widget,
+.youtube-trailer {
+    display: block;
     margin: 10px auto;
 }
 
-.btn:hover {
-    background: white;
-    color: black;
+.highlight {
+    color: #FD2E58;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin: 40px 0;
 }

@@ -1,1 +1,4 @@
-This repository hosts the website for our studio at https://froghatlabs.com/
+This repository hosts the website for our studio.
+
+**Check it out here:**
+https://froghatlabs.com/

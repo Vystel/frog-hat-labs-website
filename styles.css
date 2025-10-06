@@ -160,6 +160,7 @@ h2 {
     width: 100%;
     height: 200px;
     border: 2px solid black;
+    margin-top: 40px;
 }
 
 .frog-hat-labs-logo {
@@ -174,7 +175,7 @@ h2 {
 }
 
 .logo-container {
-    margin-top: 40px;
+    margin-top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,6 +188,29 @@ h2 {
 .cover-art {
     width: 100%;
     display: block;
+}
+
+.tagline-container {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: flex;
+    gap: 20px;
+}
+
+.voidface-bullet {
+    height: 30px;
+    animation: cycle 0.5s infinite;
+}
+
+@keyframes cycle {
+    0%, 100% { content: url("images/bullet-0.png"); }
+    50%      { content: url("images/bullet-1.png"); }
 }
 
 .content {

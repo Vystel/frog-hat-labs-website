@@ -99,6 +99,12 @@ img {
     width: 60px;
     height: auto;
     display: block;
+    transition: all 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.icon-btn:hover img {
+    width: 66px;
 }
 
 .icon-btn:hover img[src$="socials-youtube.png"] {
@@ -115,6 +121,14 @@ img {
 
 .icon-btn:hover img[src$="socials-discord.png"] {
     content: url("images/socials-discord-active.png");
+}
+
+.icon-btn:hover img[src$="socials-itchio.png"] {
+    content: url("images/socials-itchio-active.png");
+}
+
+.icon-btn:hover img[src$="socials-soundcloud.png"] {
+    content: url("images/socials-soundcloud-active.png");
 }
 
 /* Sections */
@@ -167,6 +181,64 @@ img {
     height: 1px;
     background-color: white;
     margin: 40px 0;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.team-card {
+    text-align: center;
+}
+
+.team-icon {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    animation: move 1s ease-in-out infinite alternate;
+}
+
+.team-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 5px 0;
+}
+
+.team-socials .icon-btn {
+    width: 30px;
+    height: 30px;
+}
+
+@keyframes move {
+    from {
+        transform: rotate(-4deg);
+    }
+
+    to {
+        transform: rotate(4deg);
+    }
+}
+
+.team-card h3 {
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+}
+
+.team-card p {
+    margin: 0;
+    font-size: 16px;
+    color: gray;
 }
 
 /* Small screens */

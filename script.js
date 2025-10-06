@@ -1,19 +1,15 @@
-// Section switching with fade-in
+// Section switching with side scroll effect
 const buttons = document.querySelectorAll('.section-btn');
-const sections = document.querySelectorAll('.section');
+const container = document.querySelector('.sections-container');
 
-buttons.forEach(btn => {
+buttons.forEach((btn, index) => {
     btn.addEventListener('click', () => {
-        const target = btn.dataset.section;
-        sections.forEach(section => {
-            if (section.id === target) {
-                section.classList.add('active');
-            } else {
-                section.classList.remove('active');
-            }
-        });
+        container.style.transform = `translateX(-${index * 100}%)`;
+        // Smooth-scroll the page to the top
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 });
+
 
 // Hide header on scroll down, show on scroll up
 let lastScrollY = window.scrollY;

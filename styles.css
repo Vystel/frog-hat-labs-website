@@ -21,6 +21,7 @@ img {
 
 h2 {
     font-weight: normal;
+    font-size: 28px;
 }
 
 /* Header */
@@ -154,8 +155,27 @@ h2 {
 }
 
 /* Main content */
+.frog-hat-labs-container {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    border: 2px solid black;
+    margin-top: 40px;
+}
+
+.frog-hat-labs-logo {
+    display: flex;
+    flex: 1;
+    border-right: 2px solid black;
+}
+
+.frog-hat-labs-description {
+    flex: 1;
+    padding: 1rem;
+}
+
 .logo-container {
-    margin: 40px auto;
+    margin-top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,7 +190,30 @@ h2 {
     display: block;
 }
 
-.text-content {
+.tagline-container {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: flex;
+    gap: 20px;
+}
+
+.voidface-bullet {
+    height: 30px;
+    animation: cycle 0.5s infinite;
+}
+
+@keyframes cycle {
+    0%, 100% { content: url("images/bullet-0.png"); }
+    50%      { content: url("images/bullet-1.png"); }
+}
+
+.content {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;

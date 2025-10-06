@@ -99,6 +99,12 @@ img {
     width: 60px;
     height: auto;
     display: block;
+    transition: all 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.icon-btn:hover img {
+    width: 66px;
 }
 
 .icon-btn:hover img[src$="socials-youtube.png"] {

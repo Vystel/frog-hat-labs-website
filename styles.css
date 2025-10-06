@@ -110,7 +110,7 @@ h2 {
 }
 
 .icon-btn:hover img {
-    scale: 1.5;
+    scale: 1.4;
 }
 
 .icon-btn:hover img[src$="socials-youtube.png"] {

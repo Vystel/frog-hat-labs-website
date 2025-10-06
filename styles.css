@@ -18,6 +18,10 @@ img {
     image-rendering: -moz-crisp-edges;
 }
 
+h2 {
+    font-weight: normal;
+}
+
 /* Header */
 .header {
     display: flex;

@@ -4,12 +4,16 @@
     src: url('abhofont.ttf') format('truetype');
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     background-color: black;
     color: white;
     font-family: 'AbhoFont', sans-serif;
-    overflow-x: hidden;
+    position: relative;
 }
 
 /* Pixelated image rendering */
@@ -296,22 +300,58 @@ h2 {
     color: gray;
 }
 
-/* Small screens */
+/* Responsive based on screen size - for better support on smaller screens */
 @media (max-width: 1100px) {
+    .header-right .icon-btn {
+        width: 60px;
+    }
+
+    .section-btn {
+        font-size: 20px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 900px) {
     .header {
-        height: 60px;
-        padding: 0 5px;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+        width: 100vw;
     }
 
     .header-left img {
         max-height: 40px;
     }
 
+    .header-center {
+        position: static;
+        transform: none;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .section {
+        padding: 130px 0;
+    }
+
     .section-btn {
         width: auto;
-        height: 60px;
-        font-size: 16px;
-        padding: 0 10px;
+        font-size: 18px;
+        padding: 10px 20px;
+        height: auto;
+    }
+
+    .header-left {
+        display: none;
+    }
+
+    .header-right {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+        margin-right: 0px;
     }
 
     .icon-btn {
@@ -320,48 +360,53 @@ h2 {
     }
 
     .icon-btn img {
-        width: 30px;
+        width: 35px;
     }
 
-    .header-center {
-        position: static;
-        transform: none;
+    .frog-hat-labs-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .frog-hat-labs-logo img {
+        width: 100%;
+        max-width: 250px;
         margin: 0 auto;
     }
-}
 
-/* Smaller screens */
-@media (max-width: 768px) {
+    .frog-hat-labs-description {
+        text-align: center;
+    }
+
     .logo-container img {
         width: 80%;
         max-width: 300px;
     }
 
-    .text-content {
+    .tagline-container {
+        font-size: 18px;
+        gap: 10px;
+    }
+
+    .youtube-trailer,
+    .steam-widget {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .team-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .content {
         font-size: 16px;
         padding: 10px;
-    }
-
-    .steam-widget,
-    .youtube-trailer {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-/* Smallest screens */
-@media (max-width: 480px) {
-    .section-btn {
-        font-size: 14px;
-        padding: 0 5px;
-    }
-
-    .logo-container img {
-        max-width: 200px;
-    }
-
-    .text-content {
-        font-size: 14px;
     }
 }

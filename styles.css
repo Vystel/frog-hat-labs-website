@@ -142,6 +142,10 @@ h2 {
     content: url("images/socials-website-active.png");
 }
 
+.icon-btn:hover img[src$="socials-github.png"] {
+    content: url("images/socials-github-active.png");
+}
+
 /* Footer */
 .footer {
     width: 100%;

@@ -36,6 +36,7 @@ const teamMembers = [
         icon: "images/icon-abho.png",
         socials: [
             { platform: "itchio", url: "https://abho.itch.io/" },
+            { platform: "github", url: "https://github.com/aabho"},
             { platform: "youtube", url: "https://www.youtube.com/@aabho" },
             { platform: "bluesky", url: "https://bsky.app/profile/abho.bsky.social" },
             { platform: "x", url: "https://x.com/aaabho" }
@@ -45,8 +46,10 @@ const teamMembers = [
         name: "PoeDev",
         icon: "images/icon-poedev.png",
         socials: [
+            { platform: "github", url: "https://github.com/poec987"},
             { platform: "youtube", url: "https://www.youtube.com/@poedev08" },
-            { platform: "bluesky", url: "https://bsky.app/profile/poedev.bsky.social" }
+            { platform: "bluesky", url: "https://bsky.app/profile/poedev.bsky.social" },
+            { platform: "x", url: "https://x.com/poedev08" },
         ]
     },
     {
@@ -54,6 +57,7 @@ const teamMembers = [
         icon: "images/icon-vystel.png",
         socials: [
             { platform: "soundcloud", url: "https://soundcloud.com/vystelmusic" },
+            { platform: "github", url: "https://github.com/vystel"},
             { platform: "youtube", url: "https://www.youtube.com/@VystelMusic" },
             { platform: "bluesky", url: "https://bsky.app/profile/vystel.bsky.social" },
             { platform: "x", url: "https://x.com/Vystel_" }

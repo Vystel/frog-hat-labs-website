@@ -82,7 +82,10 @@ const teamMembers = [
     {
         name: "Jimmy",
         icon: "images/icon-jimmy.png",
-        socials: []
+        socials: [
+            { platform: "youtube", url: "https://www.youtube.com/@sirjimjamthefourth" },
+            { platform: "x", url: "https://x.com/jimmybeebucks" }
+        ]
     }
 ];
 

@@ -36,10 +36,8 @@ const teamMembers = [
         icon: "images/icon-abho.png",
         socials: [
             { platform: "itchio", url: "https://abho.itch.io/" },
-            { platform: "github", url: "https://github.com/aabho"},
             { platform: "youtube", url: "https://www.youtube.com/@aabho" },
-            { platform: "bluesky", url: "https://bsky.app/profile/abho.bsky.social" },
-            { platform: "x", url: "https://x.com/aaabho" }
+            { platform: "bluesky", url: "https://bsky.app/profile/abho.bsky.social" }
         ]
     },
     {

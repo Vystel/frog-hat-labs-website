@@ -106,8 +106,7 @@ h2 {
     width: 50px;
     height: auto;
     display: block;
-    transition: all 0.2s;
-    transition-timing-function: cubic-bezier(.05,1.03,.38,1);
+    transition: all 0.2s cubic-bezier(.05, 1.03, .38, 1);
 }
 
 .icon-btn:hover img {

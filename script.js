@@ -88,6 +88,14 @@ const teamMembers = [
             { platform: "youtube", url: "https://www.youtube.com/@sirjimjamthefourth" },
             { platform: "x", url: "https://x.com/jimmybeebucks" }
         ]
+    },
+    {
+        name: "Psycadeluxe",
+        icon: "images/icon-psycadeluxe.png",
+        socials: [
+            { platform: "youtube", url: "https://www.youtube.com/@Psycadelux" },
+            { platform: "bluesky", url: "https://bsky.app/profile/psycadeluxe.bsky.social" },
+        ]
     }
 ];
 

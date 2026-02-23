@@ -1,15 +1,35 @@
-// Section switching with side scroll effect
+// Side scroll section switching effect
 const buttons = document.querySelectorAll('.section-btn');
-const container = document.querySelector('.sections-container');
+const sections = document.querySelectorAll('.section');
 
 buttons.forEach((btn, index) => {
     btn.addEventListener('click', () => {
-        container.style.transform = `translateX(-${index * 100}%)`;
+
+        sections.forEach((section, i) => {
+            section.classList.remove('active');
+            section.style.transform = `translateX(${(i - index) * 100}%)`;
+        });
+
+        sections[index].classList.add('active');
+
         // Smooth-scroll the page to the top
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('.section');
+
+    sections.forEach((section, index) => {
+        section.style.transform = `translateX(${index * 100}%)`;
+    });
+    
+    // Enable transition AFTER layout is calculated
+    void document.body.offsetHeight;
+    sections.forEach(section => {
+        section.style.transition = 'transform 0.4s ease';
+    });
+});
 
 // Hide header on scroll down, show on scroll up
 let lastScrollY = window.scrollY;
@@ -109,7 +129,7 @@ function createSocialButton(platform, url) {
     `;
 }
 
-// Dynamically populate the team grid
+// Populate the team grid
 const teamGrid = document.getElementById("teamGrid");
 teamMembers.forEach(member => {
     const socialsHTML = member.socials.map(s => createSocialButton(s.platform, s.url)).join("");

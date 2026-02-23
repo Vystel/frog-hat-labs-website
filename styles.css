@@ -4,10 +4,6 @@
     src: url('abhofont.ttf') format('truetype');
 }
 
-html, body {
-    overflow-x: hidden;
-}
-
 body {
     margin: 0;
     background-color: black;
@@ -32,28 +28,27 @@ h2 {
 .header {
     display: flex;
     align-items: center;
-    background-color: black;
-    border-bottom: 2px solid white;
-    height: 80px;
-    margin: 0;
-    padding: 0 10px;
-    transition: transform 0.3s ease;
-
     position: fixed;
     top: 0;
     left: 0;
+    background-color: black;
+    border-bottom: 2px solid white;
+    height: 80px;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease;
     z-index: 1000;
 }
 
 .header-left {
-    margin-left: 10px;
     display: flex;
     align-items: center;
 }
 
 .header-left img {
     max-height: 60px;
+    margin: 10px 20px;
 }
 
 .header-center {
@@ -63,13 +58,6 @@ h2 {
     display: flex;
     align-items: center;
     z-index: 1001;
-}
-
-.header-right {
-    margin-left: auto;
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
 }
 
 .section-btn {
@@ -200,8 +188,14 @@ h2 {
 }
 
 .frog-hat-labs-description {
+    text-align: left;
     flex: 1;
     padding: 1rem;
+}
+
+.frog-hat-labs-socials {
+    display: flex;
+    align-items: center;
 }
 
 .logo-container {
@@ -263,7 +257,7 @@ h2 {
 
 .divider {
     width: 100%;
-    height: 1px;
+    height: 2px;
     background-color: white;
     margin: 40px 0;
 }
@@ -328,66 +322,19 @@ h2 {
 }
 
 /* Responsive based on screen size - for better support on smaller screens */
-@media (max-width: 1100px) {
-    .header-right .icon-btn {
-        width: 60px;
-    }
-
-    .section-btn {
-        font-size: 20px;
-        width: 150px;
-    }
-}
-
 @media (max-width: 900px) {
-    .header {
-        flex-wrap: wrap;
-        height: auto;
-        padding: 10px;
-        width: 100vw;
-    }
-
-    .header-left img {
-        max-height: 40px;
-    }
-
     .header-center {
         position: static;
         transform: none;
         justify-content: center;
         width: 100%;
-        margin-top: 10px;
-    }
-    
-    .section {
-        padding: 130px 0;
+
     }
 
     .section-btn {
         width: auto;
         font-size: 18px;
         padding: 10px 20px;
-        height: auto;
-    }
-
-    .header-left {
-        display: none;
-    }
-
-    .header-right {
-        justify-content: center;
-        width: 100%;
-        margin-top: 10px;
-        margin-right: 0px;
-    }
-
-    .icon-btn {
-        width: 50px;
-        height: 50px;
-    }
-
-    .icon-btn img {
-        width: 35px;
     }
 
     .frog-hat-labs-container {
@@ -405,6 +352,10 @@ h2 {
         text-align: center;
     }
 
+    .frog-hat-labs-socials {
+        justify-content: center;
+    }
+
     .logo-container img {
         width: 80%;
         max-width: 300px;
@@ -412,7 +363,7 @@ h2 {
 
     .tagline-container {
         font-size: 18px;
-        gap: 10px;
+        gap: 20px;
     }
 
     .youtube-trailer,
@@ -430,10 +381,5 @@ h2 {
     .team-icon {
         width: 100px;
         height: 100px;
-    }
-
-    .content {
-        font-size: 16px;
-        padding: 10px;
     }
 }

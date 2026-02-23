@@ -75,7 +75,7 @@ const teamMembers = [
         icon: "images/icon-vystel.png",
         socials: [
             { platform: "soundcloud", url: "https://soundcloud.com/vystelmusic" },
-            { platform: "newgrounds", url: "https://jo560hs.newgrounds.com/" },
+            { platform: "newgrounds", url: "https://vystel.newgrounds.com/" },
             { platform: "youtube", url: "https://www.youtube.com/@VystelMusic" },
             { platform: "github", url: "https://github.com/vystel"},
             { platform: "bluesky", url: "https://bsky.app/profile/vystel.bsky.social" },

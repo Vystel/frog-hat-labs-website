@@ -64,8 +64,8 @@ const teamMembers = [
         name: "PoeDev",
         icon: "images/icon-poedev.png",
         socials: [
-            { platform: "github", url: "https://github.com/poec987"},
             { platform: "youtube", url: "https://www.youtube.com/@poedev08" },
+            { platform: "github", url: "https://github.com/poec987"},
             { platform: "bluesky", url: "https://bsky.app/profile/poedev.bsky.social" },
             { platform: "x", url: "https://x.com/poedev08" },
         ]
@@ -75,8 +75,9 @@ const teamMembers = [
         icon: "images/icon-vystel.png",
         socials: [
             { platform: "soundcloud", url: "https://soundcloud.com/vystelmusic" },
-            { platform: "github", url: "https://github.com/vystel"},
+            { platform: "newgrounds", url: "https://jo560hs.newgrounds.com/" },
             { platform: "youtube", url: "https://www.youtube.com/@VystelMusic" },
+            { platform: "github", url: "https://github.com/vystel"},
             { platform: "bluesky", url: "https://bsky.app/profile/vystel.bsky.social" },
             { platform: "x", url: "https://x.com/Vystel_" }
         ]
@@ -86,6 +87,7 @@ const teamMembers = [
         icon: "images/icon-jo560hs.png",
         socials: [
             { platform: "website", url: "https://josupesa.nekoweb.org/" },
+            { platform: "newgrounds", url: "https://jo560hs.newgrounds.com/" },
             { platform: "youtube", url: "https://www.youtube.com/@Jo560hs" },
             { platform: "bluesky", url: "https://bsky.app/profile/josupesa.bsky.social" }
         ]

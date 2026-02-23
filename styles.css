@@ -100,38 +100,15 @@ h2 {
 .icon-btn:hover img {
     scale: 1.4;
 }
-
-.icon-btn:hover img[src$="socials-youtube.png"] {
-    content: url("images/socials-youtube-active.png");
-}
-
-.icon-btn:hover img[src$="socials-bluesky.png"] {
-    content: url("images/socials-bluesky-active.png");
-}
-
-.icon-btn:hover img[src$="socials-x.png"] {
-    content: url("images/socials-x-active.png");
-}
-
-.icon-btn:hover img[src$="socials-discord.png"] {
-    content: url("images/socials-discord-active.png");
-}
-
-.icon-btn:hover img[src$="socials-itchio.png"] {
-    content: url("images/socials-itchio-active.png");
-}
-
-.icon-btn:hover img[src$="socials-soundcloud.png"] {
-    content: url("images/socials-soundcloud-active.png");
-}
-
-.icon-btn:hover img[src$="socials-website.png"] {
-    content: url("images/socials-website-active.png");
-}
-
-.icon-btn:hover img[src$="socials-github.png"] {
-    content: url("images/socials-github-active.png");
-}
+.icon-btn:hover img[src$="socials-youtube.png"]{content:url("images/socials-youtube-active.png")}
+.icon-btn:hover img[src$="socials-bluesky.png"]{content:url("images/socials-bluesky-active.png")}
+.icon-btn:hover img[src$="socials-x.png"]{content:url("images/socials-x-active.png")}
+.icon-btn:hover img[src$="socials-discord.png"]{content:url("images/socials-discord-active.png")}
+.icon-btn:hover img[src$="socials-itchio.png"]{content:url("images/socials-itchio-active.png")}
+.icon-btn:hover img[src$="socials-website.png"]{content:url("images/socials-website-active.png")}
+.icon-btn:hover img[src$="socials-soundcloud.png"]{content:url("images/socials-soundcloud-active.png")}
+.icon-btn:hover img[src$="socials-newgrounds.png"]{content:url("images/socials-newgrounds-active.png")}
+.icon-btn:hover img[src$="socials-github.png"]{content:url("images/socials-github-active.png")}
 
 /* Footer */
 .footer {
@@ -321,7 +298,7 @@ h2 {
     color: gray;
 }
 
-/* Responsive based on screen size - for better support on smaller screens */
+/* Changes based on screen size for better support on smaller screens */
 @media (max-width: 900px) {
     .header-center {
         position: static;

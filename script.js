@@ -1,15 +1,41 @@
-// Section switching with side scroll effect
+// Side scroll section switching effect
 const buttons = document.querySelectorAll('.section-btn');
-const container = document.querySelector('.sections-container');
+const sections = document.querySelectorAll('.section');
 
 buttons.forEach((btn, index) => {
     btn.addEventListener('click', () => {
-        container.style.transform = `translateX(-${index * 100}%)`;
-        // Smooth-scroll the page to the top
+        // Horizontal scroll
+        sections.forEach((section, i) => {
+            section.style.transform = `translateX(${(i - index) * 100}%)`;
+        });
+
+        // Scroll to top
         window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        // Update active AFTER scroll
+        setTimeout(() => {
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            sections[index].classList.add('active');
+        }, 500);
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('.section');
+
+    sections.forEach((section, index) => {
+        section.style.transform = `translateX(${index * 100}%)`;
+    });
+    
+    // Enable transition AFTER layout is calculated
+    void document.body.offsetHeight;
+    sections.forEach(section => {
+        section.style.transition = 'transform 0.4s ease';
+    });
+});
 
 // Hide header on scroll down, show on scroll up
 let lastScrollY = window.scrollY;
@@ -44,8 +70,8 @@ const teamMembers = [
         name: "PoeDev",
         icon: "images/icon-poedev.png",
         socials: [
-            { platform: "github", url: "https://github.com/poec987"},
             { platform: "youtube", url: "https://www.youtube.com/@poedev08" },
+            { platform: "github", url: "https://github.com/poec987"},
             { platform: "bluesky", url: "https://bsky.app/profile/poedev.bsky.social" },
             { platform: "x", url: "https://x.com/poedev08" },
         ]
@@ -55,8 +81,9 @@ const teamMembers = [
         icon: "images/icon-vystel.png",
         socials: [
             { platform: "soundcloud", url: "https://soundcloud.com/vystelmusic" },
-            { platform: "github", url: "https://github.com/vystel"},
+            { platform: "newgrounds", url: "https://vystel.newgrounds.com/" },
             { platform: "youtube", url: "https://www.youtube.com/@VystelMusic" },
+            { platform: "github", url: "https://github.com/vystel"},
             { platform: "bluesky", url: "https://bsky.app/profile/vystel.bsky.social" },
             { platform: "x", url: "https://x.com/Vystel_" }
         ]
@@ -66,6 +93,7 @@ const teamMembers = [
         icon: "images/icon-jo560hs.png",
         socials: [
             { platform: "website", url: "https://josupesa.nekoweb.org/" },
+            { platform: "newgrounds", url: "https://jo560hs.newgrounds.com/" },
             { platform: "youtube", url: "https://www.youtube.com/@Jo560hs" },
             { platform: "bluesky", url: "https://bsky.app/profile/josupesa.bsky.social" }
         ]
@@ -88,6 +116,14 @@ const teamMembers = [
             { platform: "youtube", url: "https://www.youtube.com/@sirjimjamthefourth" },
             { platform: "x", url: "https://x.com/jimmybeebucks" }
         ]
+    },
+    {
+        name: "Psycadeluxe",
+        icon: "images/icon-psycadeluxe.png",
+        socials: [
+            { platform: "youtube", url: "https://www.youtube.com/@Psycadelux" },
+            { platform: "bluesky", url: "https://bsky.app/profile/psycadeluxe.bsky.social" },
+        ]
     }
 ];
 
@@ -101,7 +137,7 @@ function createSocialButton(platform, url) {
     `;
 }
 
-// Dynamically populate the team grid
+// Populate the team grid
 const teamGrid = document.getElementById("teamGrid");
 teamMembers.forEach(member => {
     const socialsHTML = member.socials.map(s => createSocialButton(s.platform, s.url)).join("");

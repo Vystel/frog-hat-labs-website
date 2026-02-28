@@ -4,16 +4,22 @@ const sections = document.querySelectorAll('.section');
 
 buttons.forEach((btn, index) => {
     btn.addEventListener('click', () => {
-
+        // Horizontal scroll
         sections.forEach((section, i) => {
-            section.classList.remove('active');
             section.style.transform = `translateX(${(i - index) * 100}%)`;
         });
 
-        sections[index].classList.add('active');
-
-        // Smooth-scroll the page to the top
+        // Scroll to top
         window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        // Update active AFTER scroll
+        setTimeout(() => {
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            sections[index].classList.add('active');
+        }, 500);
     });
 });
 

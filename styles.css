@@ -109,6 +109,7 @@ h2 {
 .icon-btn:hover img[src$="socials-soundcloud.png"]{content:url("images/socials-soundcloud-active.png")}
 .icon-btn:hover img[src$="socials-newgrounds.png"]{content:url("images/socials-newgrounds-active.png")}
 .icon-btn:hover img[src$="socials-github.png"]{content:url("images/socials-github-active.png")}
+.icon-btn:hover img[src$="socials-bandcamp.png"]{content:url("images/socials-bandcamp-active.png")}
 
 /* Footer */
 .footer {

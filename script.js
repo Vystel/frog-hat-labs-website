@@ -95,7 +95,8 @@ const teamMembers = [
             { platform: "website", url: "https://josupesa.nekoweb.org/" },
             { platform: "newgrounds", url: "https://jo560hs.newgrounds.com/" },
             { platform: "youtube", url: "https://www.youtube.com/@Jo560hs" },
-            { platform: "bluesky", url: "https://bsky.app/profile/josupesa.bsky.social" }
+            { platform: "bluesky", url: "https://bsky.app/profile/josupesa.bsky.social" },
+            { platform: "bandcamp", url: "https://jo560hs.bandcamp.com/" }
         ]
     },
     {
@@ -106,7 +107,8 @@ const teamMembers = [
             { platform: "soundcloud", url: "https://soundcloud.com/frostbitten200" },
             { platform: "youtube", url: "https://www.youtube.com/@frost-tm1rx" },
             { platform: "bluesky", url: "https://bsky.app/profile/cabbitcentral.bsky.social" },
-            { platform: "x", url: "https://x.com/cabbitfreedom" }
+            { platform: "x", url: "https://x.com/cabbitfreedom" },
+            { platform: "bandcamp", url: "https://olivialapicque.bandcamp.com/" }
         ]
     },
     {

@@ -81,16 +81,16 @@ h2 { font-size: 28px; font-weight: 400; }
 }
 
 .icon-btn:hover img { scale: 1.4; }
-.icon-btn:hover img[src$="socials-youtube.png"] { content: url('images/socials-youtube-active.png'); }
-.icon-btn:hover img[src$="socials-bluesky.png"] { content: url('images/socials-bluesky-active.png'); }
-.icon-btn:hover img[src$="socials-x.png"] { content: url('images/socials-x-active.png'); }
-.icon-btn:hover img[src$="socials-discord.png"] { content: url('images/socials-discord-active.png'); }
-.icon-btn:hover img[src$="socials-itchio.png"] { content: url('images/socials-itchio-active.png'); }
-.icon-btn:hover img[src$="socials-website.png"] { content: url('images/socials-website-active.png'); }
-.icon-btn:hover img[src$="socials-soundcloud.png"] { content: url('images/socials-soundcloud-active.png'); }
-.icon-btn:hover img[src$="socials-newgrounds.png"] { content: url('images/socials-newgrounds-active.png'); }
-.icon-btn:hover img[src$="socials-github.png"] { content: url('images/socials-github-active.png'); }
-.icon-btn:hover img[src$="socials-bandcamp.png"] { content: url('images/socials-bandcamp-active.png'); }
+.icon-btn:hover img[src$="socials-youtube.png"] { content: url('/images/socials/socials-youtube-active.png'); }
+.icon-btn:hover img[src$="socials-bluesky.png"] { content: url('/images/socials/socials-bluesky-active.png'); }
+.icon-btn:hover img[src$="socials-x.png"] { content: url('/images/socials/socials-x-active.png'); }
+.icon-btn:hover img[src$="socials-discord.png"] { content: url('/images/socials/socials-discord-active.png'); }
+.icon-btn:hover img[src$="socials-itchio.png"] { content: url('/images/socials/socials-itchio-active.png'); }
+.icon-btn:hover img[src$="socials-website.png"] { content: url('/images/socials/socials-website-active.png'); }
+.icon-btn:hover img[src$="socials-soundcloud.png"] { content: url('/images/socials/socials-soundcloud-active.png'); }
+.icon-btn:hover img[src$="socials-newgrounds.png"] { content: url('/images/socials/socials-newgrounds-active.png'); }
+.icon-btn:hover img[src$="socials-github.png"] { content: url('/images/socials/socials-github-active.png'); }
+.icon-btn:hover img[src$="socials-bandcamp.png"] { content: url('/images/socials/socials-bandcamp-active.png'); }
 
 .footer {
     position: relative;
@@ -108,7 +108,7 @@ h2 { font-size: 28px; font-weight: 400; }
 .footer a:hover { text-decoration: underline; }
 
 .sections-container { position: relative; width: 100%; overflow: hidden; }
-.section { position: absolute; top: 0; left: 0; width: 100%; padding-top: 80px; }
+.section { position: absolute; top: 0; left: 0; width: 100%; padding-top: 80px;}
 .section.active { position: relative; }
 
 .falling-bullets {
@@ -148,7 +148,8 @@ h2 { font-size: 28px; font-weight: 400; }
 .enemy-showcase {
     display: flex;
     flex-direction: column;
-    margin: 36px 0;
+    margin-top: 24px;
+    padding-bottom: 128px;
 }
 
 .enemy-row {
@@ -184,7 +185,7 @@ h2 { font-size: 28px; font-weight: 400; }
     padding: 0 16px;
     align-self: center;
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.35;
     letter-spacing: 1px;
     border: 2px solid #8A8DC0;
@@ -212,8 +213,8 @@ h2 { font-size: 28px; font-weight: 400; }
 .voidface-bullet { height: 30px; animation: cycle .5s infinite; }
 
 @keyframes cycle {
-    0%, 100% { content: url('images/bullet-0.png'); }
-    50% { content: url('images/bullet-1.png'); }
+    0%, 100% { content: url('/images/bullet-0.png'); }
+    50% { content: url('/images/bullet-1.png'); }
 }
 
 .content {
@@ -395,7 +396,7 @@ h2 { font-size: 28px; font-weight: 400; }
         margin: 0 auto;
         padding: 14px 18px;
         text-align: left;
-        font-size: clamp(16px, 4.2vw, 24px);
+        font-size: 16px;
     }
     .team-grid { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; }
     .team-icon { width: 100px; height: 100px; }

@@ -13,7 +13,7 @@ const getRandomRange = (min, max) => min + Math.random() * (max - min);
 const getRandomBulletImage = () => BULLET_IMAGES[Math.floor(Math.random() * BULLET_IMAGES.length)];
 
 const ROUTES = {
-    '/VOIDFACE': 0,
+    '/voidface': 0,
     '/about-us': 1,
 };
 

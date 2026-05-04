@@ -29,13 +29,17 @@ function getInitialSection(pathname) {
 document.addEventListener('DOMContentLoaded', () => {
     // put the sections side-by-side horizontally
     sections.forEach((section, index) => {
+        section.style.transition = 'none';
         section.style.transform = `translateX(${index * 100}%)`;
     });
-    void document.body.offsetHeight;
-    sections.forEach(section => section.style.transition = 'transform 0.4s ease');
-
     const initialIndex = getInitialSection(window.location.pathname);
     navigateToSection(initialIndex, { pushState: false, animate: false });
+
+    void document.body.offsetHeight;
+
+    sections.forEach(section => {
+        section.style.transition = 'transform 0.4s ease';
+    });
 });
 
 // section sliding

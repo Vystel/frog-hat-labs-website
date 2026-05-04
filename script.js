@@ -35,10 +35,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const initialIndex = getInitialSection(window.location.pathname);
     navigateToSection(initialIndex, { pushState: false, animate: false });
 
-    void document.body.offsetHeight;
-
-    sections.forEach(section => {
-        section.style.transition = 'transform 0.4s ease';
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            sections.forEach(section => {
+                section.style.transition = 'transform 0.4s ease';
+            });
+        });
     });
 });
 

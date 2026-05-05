@@ -441,6 +441,7 @@ h2 { font-size: 28px; font-weight: 400; }
     .enemy-row-right .enemy-art {
         justify-self: end;
     }
+    .stage-art { width: 125%; height: auto; object-fit: cover; object-position: center; }
     .voidface-panel {
         width: 90%;
         margin: 0 auto;

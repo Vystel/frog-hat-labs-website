@@ -19,10 +19,11 @@ img {
 
 h2 { font-size: 28px; font-weight: 400; }
 
-.header        { z-index: 1000; }
-.header-center { z-index: 1001; }
+.header-center { z-index: 11; }
+.header        { z-index: 10; }
 
-.enemy-art,
+.enemy-art   { z-index: 4; }
+
 .voidface-panel,
 .game-content { z-index: 3; }
 

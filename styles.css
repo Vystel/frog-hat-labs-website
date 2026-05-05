@@ -161,7 +161,7 @@ h2 { font-size: 28px; font-weight: 400; }
     display: flex;
     flex-direction: column;
     margin-top: 24px;
-    padding-bottom: 128px;
+    padding-bottom: 24px;
 }
 
 .enemy-row {

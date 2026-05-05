@@ -421,7 +421,7 @@ h2 { font-size: 28px; font-weight: 400; }
     .voidface-hero { min-height: 50vh; }
     .hero-btn { width: min(90vw, 320px); font-size: 18px; }
     .youtube-trailer { width: 100%; height: auto; aspect-ratio: 16 / 9; }
-    .enemy-row { height: auto; }
+    .enemy-row { height: auto; min-height: 500px; }
     .enemy-row,
     .enemy-row-left,
     .enemy-row-right {

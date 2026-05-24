@@ -248,6 +248,6 @@ teamMembersGrid.insertAdjacentHTML('beforeend', teamMembers.map(({ name, icon, s
         <h3>${name}</h3>
         ${socials.length ? `<div class="team-socials">${socials.map(({ platform, url }) =>
             `<a class="icon-btn" href="${url}" target="_blank" rel="noopener noreferrer">
-                <img src="/images/socials/socials-${platform}.png" alt="${platform}">
+                <img src="/images/socials/${platform}.png" alt="${platform}">
             </a>`).join('')}</div>` : ''}
     </div>`).join(''));

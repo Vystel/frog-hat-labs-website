@@ -95,16 +95,16 @@ h2 { font-size: 28px; font-weight: 400; }
 }
 
 .icon-btn:hover img { scale: 1.4; }
-.icon-btn:hover img[src$="socials-youtube.png"] { content: url('/images/socials/socials-youtube-active.png'); }
-.icon-btn:hover img[src$="socials-bluesky.png"] { content: url('/images/socials/socials-bluesky-active.png'); }
-.icon-btn:hover img[src$="socials-x.png"] { content: url('/images/socials/socials-x-active.png'); }
-.icon-btn:hover img[src$="socials-discord.png"] { content: url('/images/socials/socials-discord-active.png'); }
-.icon-btn:hover img[src$="socials-itchio.png"] { content: url('/images/socials/socials-itchio-active.png'); }
-.icon-btn:hover img[src$="socials-website.png"] { content: url('/images/socials/socials-website-active.png'); }
-.icon-btn:hover img[src$="socials-soundcloud.png"] { content: url('/images/socials/socials-soundcloud-active.png'); }
-.icon-btn:hover img[src$="socials-newgrounds.png"] { content: url('/images/socials/socials-newgrounds-active.png'); }
-.icon-btn:hover img[src$="socials-github.png"] { content: url('/images/socials/socials-github-active.png'); }
-.icon-btn:hover img[src$="socials-bandcamp.png"] { content: url('/images/socials/socials-bandcamp-active.png'); }
+.icon-btn:hover img[src$="youtube.png"] { content: url('/images/socials/youtube-active.png'); }
+.icon-btn:hover img[src$="bluesky.png"] { content: url('/images/socials/bluesky-active.png'); }
+.icon-btn:hover img[src$="x.png"] { content: url('/images/socials/x-active.png'); }
+.icon-btn:hover img[src$="discord.png"] { content: url('/images/socials/discord-active.png'); }
+.icon-btn:hover img[src$="itchio.png"] { content: url('/images/socials/itchio-active.png'); }
+.icon-btn:hover img[src$="website.png"] { content: url('/images/socials/website-active.png'); }
+.icon-btn:hover img[src$="soundcloud.png"] { content: url('/images/socials/soundcloud-active.png'); }
+.icon-btn:hover img[src$="newgrounds.png"] { content: url('/images/socials/newgrounds-active.png'); }
+.icon-btn:hover img[src$="github.png"] { content: url('/images/socials/github-active.png'); }
+.icon-btn:hover img[src$="bandcamp.png"] { content: url('/images/socials/bandcamp-active.png'); }
 
 .footer {
     position: relative;

@@ -7,7 +7,7 @@ const bulletsLayer = document.querySelector('.falling-bullets');
 const voidfaceSection = document.getElementById('VOIDFACE');
 
 const BULLET_IMAGES = Array.from({ length: 6 }, (_, index) => `/images/bullets/bullet${index}.png`);
-const BULLET_COUNT = 32;
+const BULLET_COUNT = 48;
 
 const getRandomRange = (min, max) => min + Math.random() * (max - min);
 const getRandomBulletImage = () => BULLET_IMAGES[Math.floor(Math.random() * BULLET_IMAGES.length)];
@@ -203,6 +203,25 @@ window.addEventListener('load', () => {
     refreshParallaxAnchors();
     initBullets();
 });
+
+// only decode panel videos while they are on screen
+const panelVideos = document.querySelectorAll('.panel-gif');
+if (panelVideos.length && 'IntersectionObserver' in window) {
+    const panelVideoObserver = new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+            const video = entry.target;
+            if (entry.isIntersecting) {
+                video.play().catch(() => {});
+            } else {
+                video.pause();
+            }
+        }
+    }, { rootMargin: '80px 0px', threshold: 0.15 });
+
+    panelVideos.forEach(video => panelVideoObserver.observe(video));
+} else {
+    panelVideos.forEach(video => video.play().catch(() => {}));
+}
 
 const teamMembers = [
     { name: 'abho', icon: '/images/team/icon-abho.png', socials: [
